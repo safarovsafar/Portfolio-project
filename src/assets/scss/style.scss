@@ -1,0 +1,31 @@
+@import 'smart-grid';
+@import 'var';
+@import './header/header';
+@import './footer/footer';
+@import './section/section';
+@import './buttons/buttons';
+@import './effects/effects';
+@import url('https://fonts.googleapis.com/css?family=Permanent+Marker');
+// font-family: 'Monoton', cursive;
+// font-family: 'Major Mono Display', monospace;
+// font-family: 'Staatliches', cursive;
+// font-family: 'Permanent Marker', cursive;
+
+* {
+    @include reset();
+    font-family: 'Permanent Marker', cursive;
+
+}
+
+.headtext {
+    border: 4px solid #000;
+    margin: 0 auto;
+    padding: 15px;
+    margin-top: 5rem;
+    font-size: 30px;
+    margin-bottom: 5rem;
+    border-radius: 100%;
+    -webkit-clip-path: polygon(26% 0%, 100% 0, 76% 100%, 0% 100%);
+    clip-path: polygon(25% 0%, 100% 0, 75% 100%, 0% 100%);
+    width: 250px;
+}

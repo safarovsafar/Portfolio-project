@@ -1,0 +1,47 @@
+section {
+    .wrapper {
+        // @include size(12);
+        @include wp();
+        border: 1px solid #000;
+        margin: 0 auto;
+        height: 100vh;
+
+        .boxes {
+            display: flex;
+            justify-content: space-around;
+            border: 1px solid #000;
+            @include size(24);
+
+            .text {
+                @include size(8);
+
+                .saveup {
+                    .h2 {
+                        font-size: 30px;
+                        font-style: bold;
+                    }
+                }
+            }
+
+            .card1 {
+                // @include size(8);
+                height: 450px;
+                width: 350px;
+                box-shadow: 0px 5px 20px #bdaaaab0;
+                border-radius: 15px;
+                text-align: center;
+                position: relative;
+                background-color: #fff;
+                position: relative;
+                -webkit-transition: all 200ms ease-in;
+                -webkit-transform: scale(1);
+                -ms-transition: all 200ms ease-in;
+                -ms-transform: scale(1);
+                -moz-transition: all 200ms ease-in;
+                -moz-transform: scale(1);
+                transition: all 200ms ease-in;
+                transform: scale(1);
+            }
+        }
+    }
+}
